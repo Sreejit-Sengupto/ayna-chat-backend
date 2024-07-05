@@ -5,7 +5,7 @@ import cookieParser from 'cookie-parser'
 const app = express();
 
 app.use(cors({
-    origin: 'https://frontend-theta-steel-11.vercel.app',
+    origin: '*',
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization']
