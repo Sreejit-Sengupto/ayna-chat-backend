@@ -13,5 +13,5 @@ app.post('/api/cookie', (req, res) => {
         sameSite: 'None',
         secure: true,
     };
-    return res.status(200).cookie('TestCookie', 'helloIamatestcookie').json({ message: 'Cookies set'})
+    return res.status(200).cookie('TestCookie', 'helloIamatestcookie', options).json({ message: 'Cookies set'})
 })
