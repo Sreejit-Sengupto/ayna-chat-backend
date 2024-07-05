@@ -17,8 +17,9 @@ app.post("/api/cookie", (req, res) => {
     .status(200)
     .cookie("TestCookie", "helloIamatestcookie", {
       httpOnly: true,
-      domain: "https://frontend-theta-steel-11.vercel.app",
-      path: "/",
+    //   domain: "https://frontend-theta-steel-11.vercel.app",
+      domain: "*",
+    //   path: "/",
       sameSite: "none",
       secure: true,
     })
